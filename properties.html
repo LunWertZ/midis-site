@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Объекты недвижимости - MIDIS PROJECT HOME</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="icon" href="images/houses.svg" type="image/svg+xml">
+</head>
+<body>
+   <header class="header">
+    <div class="container">
+      <div class="header__logo">
+        <img src="images/houses.svg" alt="Midis Project Home" class="logo-icon" aria-hidden="true">
+        <span class="logo-text">MIDIS PROJECT HOME</span>
+      </div>
+      <nav class="header__nav">
+        <ul class="nav__list">
+          <li class="nav__item"><a href="index.html" class="nav__link">Главная</a></li>
+          <li class="nav__item"><a href="about.html" class="nav__link">О нас</a></li>
+          <li class="nav__item"><a href="services.html" class="nav__link">Услуги</a></li>
+          <li class="nav__item"><a href="blog.html" class="nav__link">Блог</a></li>
+          <li class="nav__item"><a href="properties.html" class="nav__link active">Объекты</a></li>
+          <li class="nav__item"><a href="contacts.html" class="nav__link">Контакты</a></li>
+        </ul>
+        <button class="mobile-menu-btn" aria-label="Меню">
+          <span class="menu-line"></span>
+          <span class="menu-line"></span>
+          <span class="menu-line"></span>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <div class="container">
+        <h1 class="page-hero__title">Наши объекты</h1>
+        <p class="page-hero__subtitle">Эксклюзивная недвижимость в самых живописных пустынях мира</p>
+      </div>
+    </section>
+
+    <section class="filter-section">
+      <div class="container">
+        <form class="filter-form">
+          <div class="filter-group">
+            <label for="location">Локация</label>
+            <select id="location">
+              <option value="">Все регионы</option>
+              <option value="dubai">Россия, Челябинск</option>
+              <option value="marrakech">Россия, Москва</option>
+              <option value="arizona">Россия, Краснодар</option>
+              <option value="atacama">Россия, Уфа</option>
+            </select>
+          </div>
+          <div class="filter-group">
+            <label for="type">Тип недвижимости</label>
+            <select id="type">
+              <option value="">Все типы</option>
+              <option value="villa">Вилла</option>
+              <option value="house">Дом</option>
+              <option value="apartment">Апартаменты</option>
+              <option value="land">Участок</option>
+            </select>
+          </div>
+          <div class="filter-group">
+            <label for="price">Цена, млн ₽</label>
+            <input type="range" id="price" min="10" max="200" value="100">
+            <div class="price-range">
+              <span>10</span>
+              <span id="current-price">100</span>
+              <span>200</span>
+            </div>
+          </div>
+          <button type="submit" class="filter-btn">Применить фильтры</button>
+          <button type="reset" class="reset-btn">Сбросить</button>
+        </form>
+      </div>
+    </section>
+
+    <section class="properties-section">
+      <div class="container">
+        <div class="properties-grid">
+          <div class="property-card">
+            <div class="property-badge">Новое</div>
+            <div class="property-image">
+              <img src="images/property1.jpg" alt="Оазис Марракеш" loading="lazy">
+            </div>
+            <div class="property-content">
+              <h3 class="property-title">Оазис "С.Юлаева"</h3>
+              <p class="property-location">Россия, Уфа</p>
+              <div class="property-features">
+                <span>🏠 250 м²</span>
+                <span>🛏️ 4 спальни</span>
+                <span>🌴 2 бассейна</span>
+              </div>
+              <p class="property-price">45 000 000 ₽</p>
+              <button class="property-btn">Подробнее</button>
+            </div>
+          </div>
+          
+          <div class="property-card">
+            <div class="property-badge popular">Популярное</div>
+            <div class="property-image">
+              <img src="images/property2.jpg" alt="Вилла Сахара" loading="lazy">
+            </div>
+            <div class="property-content">
+              <h3 class="property-title">Вилла "Трактор"</h3>
+              <p class="property-location">Россия, Челябинск</p>
+              <div class="property-features">
+                <span>🏠 380 м²</span>
+                <span>🛏️ 5 спален</span>
+                <span>🏊 Бассейн</span>
+              </div>
+              <p class="property-price">78 500 000 ₽</p>
+              <button class="property-btn">Подробнее</button>
+            </div>
+          </div>
+          
+          <div class="property-card">
+            <div class="property-image">
+              <img src="images/property3.jpg" alt="Особняк Мираж" loading="lazy">
+            </div>
+            <div class="property-content">
+              <h3 class="property-title">Особняк "Трактор"</h3>
+              <p class="property-location">Россия, Челябинск</p>
+              <div class="property-features">
+                <span>🏠 520 м²</span>
+                <span>🛏️ 6 спален</span>
+                <span>🏊 2 бассейна</span>
+              </div>
+              <p class="property-price">120 000 000 ₽</p>
+              <button class="property-btn">Подробнее</button>
+            </div>
+          </div>
+          
+          <div class="property-card">
+            <div class="property-image">
+              <img src="images/property4.jpg" alt="Дюны Аризоны" loading="lazy">
+            </div>
+            <div class="property-content">
+              <h3 class="property-title">Дюны Краснодара</h3>
+              <p class="property-location">Россия, Краснодар</p>
+              <div class="property-features">
+                <span>🏠 180 м²</span>
+                <span>🛏️ 3 спальни</span>
+                <span>🌵 Участок 1 га</span>
+              </div>
+              <p class="property-price">32 000 000 ₽</p>
+              <button class="property-btn">Подробнее</button>
+            </div>
+          </div>
+          
+          <div class="property-card">
+            <div class="property-image">
+              <img src="images/property5.jpg" alt="Лофт в пустыне" loading="lazy">
+            </div>
+            <div class="property-content">
+              <h3 class="property-title">Лофт "Динамо"</h3>
+              <p class="property-location">Россия, Москва</p>
+              <div class="property-features">
+                <span>🏠 150 м²</span>
+                <span>🛏️ 2 спальни</span>
+                <span>☀️ Солнечная станция</span>
+              </div>
+              <p class="property-price">28 000 000 ₽</p>
+              <button class="property-btn">Подробнее</button>
+            </div>
+          </div>
+          
+          <div class="property-card">
+            <div class="property-badge">Скоро в продаже</div>
+            <div class="property-image">
+              <img src="images/property6.jpg">
+            </div>
+            <div class="property-content">
+              <h3 class="property-title">Ретро Вилла</h3>
+              <p class="property-location">Россия, Уфа</p>
+              <div class="property-features">
+                <span>🏠 320 м²</span>
+                <span>🛏️ 4 спальни</span>
+                <span>🏊 Бассейн</span>
+              </div>
+              <p class="property-price">Скоро</p>
+              <button class="property-btn">Узнать первым</button>
+            </div>
+          </div>
+        </div>
+        
+        <div class="pagination">
+          <button class="pagination-btn active">1</button>
+          <button class="pagination-btn">2</button>
+          <button class="pagination-btn">3</button>
+          <button class="pagination-btn next">Следующая →</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta-section">
+      <div class="container">
+        <h2 class="cta-title">Не нашли подходящий вариант?</h2>
+        <p class="cta-text">Оставьте заявку, и мы подберём для вас идеальный дом по вашим критериям</p>
+        <button class="cta-btn">Оставить заявку</button>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__content">
+        <div class="footer__info">
+          <div class="footer__logo">
+            <img src="images/houses.svg" alt="Midis Project Home" class="logo-icon" aria-hidden="true">
+            <span class="logo-text">MIDIS PROJECT HOME</span>
+        </div>
+ <div class="footer__contacts">
+          <h3>Контакты</h3>
+          <p>г. Челябинск, ул. Ворошилова, 12, 15</p>
+          <p>+8 (351) 216-10-10</p>
+          <p>Tretyakov@midis.ru</p>
+        </div>
+      </div>
+      <p class="footer__copyright">©2025 Midis Project Home. </p>
+    </div>
+  </footer>
+
+    </div>
+  </footer>
+
+  <div class="modal" id="property-modal">
+    <div class="modal__content">
+      <button class="modal__close">&times;</button>
+      <h2 class="modal__title"></h2>
+      <div class="modal__gallery"></div>
+      <div class="modal__info"></div>
+      <button class="modal__contact">Связаться с агентом</button>
+    </div>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
